@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    printf("Hello welcome to Bhaan's kitchen!\n Our takeway menu is:");
+    printf("\n1.Desi Chinese food pack \n2.North Indian food pack\n3.South Indian food pack\n4.Indian Fusion pack\n5.Boredom food pack");
+    printf("\nPlease note that the food packs serve for 3-4 adults.");
+    printf("\n Kindly enter the number of your food preference choice:");
+    int food;
+    scanf("%d",&food);
+    switch(food)
+    {
+        case 1:
+            printf("\n You have chosen Desi Chinese Food Pack!\n Good choice!\n Price- Rs.570");
+        break;
+        case 2:
+            printf("\nYou have chosen North Indian Food Pack!\n Good choice!\n Price- Rs.450");
+        break;
+        case 3:
+            printf("\nYou have chosen South Indian Food Pack!\n Good choice!\n Price- Rs.450");
+        break;
+        case 4:
+            printf("\nYou have chosen Indian Fusion Food Pack!\n Good choice!\n Price- Rs.600");
+        break;
+        case 5:
+            printf("\nYou have chosen Boredom Food Pack!\n Good choice!\n Price- Rs.250");
+        break;
+        default:printf("\n You have entered an invalid number. Please try again!");
+    }
+    printf("\n Thank you for choosing Bhaan's kitchen.\nHope you enjoy our love filled food!");
+    return 0;
+}
